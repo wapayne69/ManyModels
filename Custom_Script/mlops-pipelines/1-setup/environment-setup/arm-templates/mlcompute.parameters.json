@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmSize": {
-            "value": "STANDARD_D13_V2"
+            "value": "STANDARD_DSv2"
         },
         "minNodeCount": {
             "value": 0
         },
         "maxNodeCount": {
-            "value": 5
+            "value": 1
         },
         "scaleDownTime": {
             "value": "PT15M"
