@@ -19,6 +19,9 @@
         },
         "scaleDownTime": {
             "type": "string"
+        },
+        "cluster_purpose": {
+            "type": "string"
         }
     },
     "variables": {},
@@ -35,7 +38,8 @@
                     "scaleSettings": {
                         "minNodeCount" : "[parameters('minNodeCount')]",
                         "maxNodeCount" : "[parameters('maxNodeCount')]",
-                        "nodeIdleTimeBeforeScaleDown": "[parameters('scaleDownTime')]"
+                        "nodeIdleTimeBeforeScaleDown": "[parameters('scaleDownTime')]",
+                        "cluster_purpose": "[parameters('cluster_purpose')]"
                     },
                     "vmPriority": "Dedicated",  
                     "vmSize" : "[parameters('vmSize')]"      
