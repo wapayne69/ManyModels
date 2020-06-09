@@ -3,16 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmSize": {
-            "value": "STANDARD_DSv2"
+            "value": "Standard_D11_v2"
         },
         "minNodeCount": {
             "value": 0
         },
         "maxNodeCount": {
-            "value": 1
+            "value": 2
         },
         "scaleDownTime": {
             "value": "PT15M"
+        },
+        "cluster_purpose": {
+            "value": "DevTest"
         }
     }
 }
