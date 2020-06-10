@@ -53,7 +53,7 @@ def create_training_pipeline(ws, pipeline_name, pipeline_version, dataset_name, 
     return published_pipeline.id
 
 
-def get_parallel_run_config(ws, dataset_name, compute_name, processes_per_node=8, node_count=3, timeout=300):
+def get_parallel_run_config(ws, dataset_name, compute_name, processes_per_node=2, node_count=1, timeout=300):
     
     # Configure environment for ParallelRunStep
     train_env = Environment(name='many_models_environment')
